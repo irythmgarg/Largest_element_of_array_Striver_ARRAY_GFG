@@ -1,0 +1,36 @@
+#include<iostream>  // For input-output operations
+#include<vector>    // For using the vector container
+using namespace std;
+
+int main()
+{
+    int elements; 
+    // Prompt user to input the number of elements in the array
+    cout << "Enter the number of elements: ";
+    cin >> elements; 
+    
+    // Declare a vector to store the array elements
+    vector<int> arr(elements);
+    cout << "Enter the elements of the array:\n";
+
+    // Input the elements of the array
+    for(int i = 0; i < elements; i++)
+    {
+        cin >> arr[i];
+    }
+
+    // Initialize 'maxi' to the smallest possible integer
+    int maxi = INT_MIN;
+
+    // Traverse the array to find the maximum element
+    for(int i = 0; i < elements; i++)
+    {
+        // Update 'maxi' if the current element is greater
+        maxi = max(arr[i], maxi);
+    }
+
+    // Output the largest element
+    cout << "The largest element in the array is: " << maxi << endl;
+
+    return 0;
+}

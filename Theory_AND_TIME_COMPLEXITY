@@ -1,0 +1,41 @@
+Theory
+Problem Statement: The task is to determine the largest element in an array of integers. This involves iterating through the array and comparing each element to find the maximum.
+
+Approach:
+
+Use a variable maxi initialized to the smallest possible integer value (INT_MIN) to store the maximum value encountered so far.
+Traverse the array, and for each element, update maxi if the current element is greater than maxi.
+Complexity:
+
+Time Complexity: 
+𝑂(𝑛)
+O(n), where 
+𝑛
+n is the number of elements in the array. Each element is visited once.
+Space Complexity: 
+𝑂(1)
+O(1), as no extra space is used apart from the variables.
+Edge Cases:
+
+Single-element array.
+Array with all negative numbers
+
+Algorithm Explanation
+Input Reading:
+
+Read the size of the array 𝑒𝑙𝑒𝑚𝑒𝑛𝑡𝑠
+elements).
+Create a vector arr of size 𝑒𝑙𝑒𝑚𝑒𝑛𝑡𝑠
+elements to hold the array elements.
+Input each element of the array using a loop.
+Initialization:
+
+Initialize a variable maxi to INT_MIN to ensure that any element in the array can potentially replace it as the maximum.
+Array Traversal:
+
+Loop through the array:
+Compare the current element (arr[i]) with maxi.
+Update maxi to the larger of the two values.
+Output:
+
+Print the value of maxi, which holds the largest element in the array.
